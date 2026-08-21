@@ -84,7 +84,7 @@
 }
 
 #hero .container .text-container p {
-    font-size: var(--tagline-size);
+    font-size: var(--p-size);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */

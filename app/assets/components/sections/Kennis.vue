@@ -305,11 +305,6 @@ onBeforeUnmount(() => {
     align-items: stretch;
     height: 50rem;
     overflow-y: auto;
-    /* overscroll-behavior: contain; */
-    border-radius: 10px;
-    padding: 1rem;
-    /* box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05); */
-    border: 1px solid var(--neutral-300);
 }
 
 #kennis .container ul li {
@@ -359,6 +354,13 @@ onBeforeUnmount(() => {
     #kennis .container {
         max-width: 1000px;
         margin-inline: auto;
+    }
+
+    #kennis .container ul {
+        overscroll-behavior: contain;
+        border-radius: 10px;
+        padding: 1rem;
+        border: 1px solid var(--neutral-300);
     }
 }
 </style>
