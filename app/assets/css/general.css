@@ -1,0 +1,173 @@
+:root {
+    /* COLORS */
+
+    --blue: #392F5A;
+    --orange: #FF8811;
+    --teal: #9DD9D2;
+
+    --blue-accent: #C6B9EF;
+    --orange-accent: #FFE6CD;
+    --teal-accent: #44716B;
+
+    --border-300: #E6E6E6;
+    --border-500: #DCDCDC;
+
+    --neutral-100: #fcfcfc;
+    --neutral-200: #F4F4F4;
+    --neutral-300: #E6E6E6;
+    --neutral-400: #DCDCDC;
+    --neutral-500: #cecece;
+    --neutral-600: #8F8F8F;
+    --neutral-900: #131313;
+
+    /* PADDING */
+    --inline-padding: 1rem;
+    --block-padding: 5rem;
+
+    /* FONT SIZES */
+    --h1-size: 3rem;
+    --h2-size: 1.5rem;
+    --h3-size: 1.25rem;
+    --tagline-size: 1rem;
+    --p-size: .875rem;
+    --sub-title-size: .8rem;
+}
+
+@media (width > 700px) {
+    :root {
+        /* PADDING */
+        --inline-padding: 3rem;
+        --block-padding: 7rem;
+
+        /* FONT SIZES */
+        --h1-size: 3.5rem;
+        --h2-size: 2rem;
+        --h3-size: 1.4rem;
+        --tagline-size: 1.25rem;
+        --p-size: 1rem;
+        --sub-title-size: .875rem;
+    }
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* GENERAL STYLING                                     */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+html {
+    scrollbar-gutter: stable;
+    interpolate-size: allow-keywords;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--neutral-100);
+}
+
+::selection {
+    background: color-mix(in srgb, var(--blue) 25%, transparent 75%);
+}
+
+::-moz-selection {
+    background: color-mix(in srgb, var(--blue) 25%, transparent 75%);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* TEXT STYLING                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+h1 {
+    font-family: inter, sans-serif;
+    font-weight: 700;
+    line-height: 1.15em;
+    color: var(--neutral-900);
+    font-size: var(--h1-size);
+    text-wrap: balance;
+}
+
+h2 {
+    font-family: inter, sans-serif;
+    font-weight: 700;
+    line-height: 1.3em;
+    color: var(--neutral-900);
+    font-size: var(--h2-size);
+    text-wrap: balance;
+}
+
+h3 {
+    font-family: inter, sans-serif;
+    font-weight: 700;
+    line-height: 1.3em;
+    color: var(--neutral-900);
+    font-size: var(--h3-size);
+    text-wrap: balance;
+}
+
+.sub-title {
+    font-family: inter, sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: var(--neutral-900);
+    font-size: var(--sub-title-size);
+    padding: .5rem 1rem;
+    background: var(--neutral-200);
+    border: 1px solid var(--neutral-300);
+    width: max-content;
+    margin-bottom: .5rem;
+}
+
+p {
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--neutral-900);
+    font-size: var(--p-size);
+    text-wrap: pretty;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* SCROLLBAR.                                          */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) transparent;
+}
+
+/* Container that scrolls */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* REVEAL                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+h1,
+h2,
+h3,
+small,
+p:not(.reveal-ignore) {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+    transition: opacity 0.6s ease, translate 0.6s ease, scale 0.6s ease;
+}
+
+.is-pending-reveal {
+    opacity: 0 !important;
+    translate: 0 28px !important;
+    scale: 0.94 !important;
+}

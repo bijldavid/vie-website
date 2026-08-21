@@ -1,0 +1,40 @@
+/* ================================================== */
+/* INTER HEADING                                      */
+/* ================================================== */
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Inter_28pt-ExtraBold.ttf') format('truetype');
+}
+
+
+/* ================================================== */
+/* INTER BODY                                         */
+/* ================================================== */
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Inter_18pt-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+}
