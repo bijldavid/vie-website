@@ -1,13 +1,11 @@
 <template>
     <section id="samen">
         <div class="container">
-            <div class="text-container">
-                <p class="sub-title">Samen sterker</p>
-                <h2>De energietransitie doen we samen</h2>
-                <p>
-                    We verbinden organisaties die allemaal vanuit een andere rol werken aan hetzelfde energiesysteem.
-                </p>
-            </div>
+            <p class="sub-title">Samen sterker</p>
+            <h2>De energietransitie doen we samen</h2>
+            <p>
+                We verbinden organisaties die allemaal vanuit een andere rol werken aan hetzelfde energiesysteem.
+            </p>
         </div>
         <div class="scroller" ref="scrollerRef" aria-label="Samenwerkingspartners">
             <ul class="scroller-inner">
@@ -113,7 +111,7 @@ onMounted(() => {
     color: white;
     border-radius: 2px;
     pointer-events: none;
-    transition: translate var(--animation-duration) var(--timing-function);
+    transition: transform var(--animation-duration) var(--timing-function);
 }
 
 #samen .scroller-inner li p::before {
@@ -121,11 +119,10 @@ onMounted(() => {
     position: absolute;
     top: 0;
     left: var(--gap);
-    translate: -100%;
+    transform: translateX(-100%) skewY(45deg);
     height: 100%;
     width: var(--extrusion-depth);
     background: var(--orange);
-    transform: skewY(45deg);
     border-radius: 2px;
     transform-origin: 100% 0;
     transition: width var(--animation-duration) var(--timing-function);
@@ -136,18 +133,17 @@ onMounted(() => {
     position: absolute;
     top: var(--gap);
     left: 0;
-    translate: 0 -100%;
+    transform: translateY(-100%) skewX(45deg);
     width: 100%;
     height: var(--extrusion-depth);
     background: var(--teal);
-    transform: skewX(45deg);
     border-radius: 2px;
     transform-origin: 0 100%;
     transition: height var(--animation-duration) var(--timing-function);
 }
 
 #samen .scroller-inner li:hover p {
-    translate: calc(-1 * var(--extrusion-depth)) calc(-1 * var(--extrusion-depth));
+    transform: translate(calc(-1 * var(--extrusion-depth)), calc(-1 * var(--extrusion-depth)));
 }
 
 #samen .scroller-inner li:hover p::before {
