@@ -5,6 +5,8 @@
         <SectionsRol />
         <span class="hr"></span>
         <SectionsKennis />
+        <SectionsSamen />
+        <SectionsOverOns />
     </main>
 </template>
 
