@@ -85,6 +85,7 @@
 
 #hero .container .text-container p {
     font-size: var(--p-size);
+    max-width: 25ch;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -160,6 +161,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (width > 450px) {
+    #hero .container .text-container p {
+        max-width: 100%;
+    }
 }
 
 @media (width > 700px) {
