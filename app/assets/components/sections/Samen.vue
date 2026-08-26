@@ -88,12 +88,13 @@ onMounted(() => {
     container-type: inline-size;
     --marquee-duration: 40s;
     --marquee-direction: forwards;
+    --marquee-gap: 10cqw;
 }
 
 #samen .scroller-inner {
     display: flex;
     flex-wrap: wrap;
-    gap: 10cqw;
+    gap: var(--marquee-gap);
     padding-block: 6rem;
 }
 
@@ -176,7 +177,7 @@ onMounted(() => {
 
 @keyframes samen-scroll {
     to {
-        transform: translateX(calc(-50% - .5rem));
+        transform: translateX(calc(-50% - (var(--marquee-gap) / 2)));
     }
 }
 
