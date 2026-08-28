@@ -103,10 +103,10 @@ onMounted(() => {
 
 #samen .scroller-inner li p {
     --extrusion-depth: .5rem;
-    --gap: -5px;
+    --gap: -3px;
     position: relative;
     padding: 1em 2em;
-    font-size: var(--sub-title-size);
+    font-size: .66rem;
     background: var(--blue);
     color: white;
     border-radius: 2px;
@@ -194,6 +194,11 @@ onMounted(() => {
 
     #samen .container .sub-title {
         justify-self: center;
+    }
+
+    #samen .scroller-inner li p {
+        --gap: -5px;
+        font-size: .75rem;
     }
 }
 </style>
