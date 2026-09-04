@@ -17,9 +17,9 @@
                 </p>
             </div>
             <div class="image-container">
-                <img src="/images/about1.jpg" class="img-a" />
-                <img src="/images/about2.jpg" class="img-b" />
-                <img src="/images/about3.jpg" class="img-c" />
+                <img src="/images/about1.webp" class="img-a" />
+                <img src="/images/about2.webp" class="img-b" />
+                <img src="/images/about3.webp" class="img-c" />
             </div>
             <NuxtLink to="/over" class="button">Lees meer →</NuxtLink>
         </div>

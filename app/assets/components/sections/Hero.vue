@@ -8,25 +8,25 @@
         </div>
         <div class="image-cards">
             <div class="image-card" data-index="-3">
-                <img src="/images/grassy-field.png" alt="">
+                <img src="/images/grassy-field.webp" alt="">
             </div>
             <div class="image-card" data-index="-2">
-                <img src="/images/steam.png" alt="">
+                <img src="/images/steam.webp" alt="">
             </div>
             <div class="image-card" data-index="-1">
-                <img src="/images/hoogspanning.png" alt="">
+                <img src="/images/hoogspanning.webp" alt="">
             </div>
             <div class="image-card" data-index="0">
-                <img src="/images/flower-field.png" alt="">
+                <img src="/images/flower-field.webp" alt="">
             </div>
             <div class="image-card" data-index="1">
-                <img src="/images/solar-panels.png" alt="">
+                <img src="/images/solar-panels.webp" alt="">
             </div>
             <div class="image-card" data-index="2">
-                <img src="/images/field.png" alt="">
+                <img src="/images/field.webp" alt="">
             </div>
             <div class="image-card" data-index="3">
-                <img src="/images/solar-field.png" alt="">
+                <img src="/images/solar-field.webp" alt="">
             </div>
         </div>
     </section>
@@ -47,7 +47,7 @@
     gap: 3rem;
     background-image:
         linear-gradient(to bottom, var(--neutral-100), transparent 50%),
-        url('/images/repeating-dot.png');
+        url('/images/repeating-dot.webp');
     background-size: 15px;
 }
 

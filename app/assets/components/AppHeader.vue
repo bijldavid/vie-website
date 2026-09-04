@@ -2,7 +2,7 @@
     <header :class="{ 'is-scrolled': isScrolled }">
         <div class="container">
             <NuxtLink to="/" class="logo-container">
-                <img src="/images/vie-logo.png" alt="VIE Logo">
+                <img src="/images/vie-logo.webp" alt="VIE Logo">
             </NuxtLink>
 
             <nav :class="{ 'toggle-menu': menuOpen, 'menu-interacted': menuInteracted }" @click="handleNavClick">

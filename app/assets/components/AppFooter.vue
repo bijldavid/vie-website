@@ -2,7 +2,7 @@
     <footer>
         <div class="container">
             <div>
-                <img src="/images/vie-logo-white.png" alt="VIE-logo">
+                <img src="/images/vie-logo-white.webp" alt="VIE-logo">
                 <p class="tagline">Kennis.<br> Verbinding.<br> Samenwerking.<br> Versnelling.</p>
                 <nav>
                     <h3>Navigatie</h3>

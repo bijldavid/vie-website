@@ -51,7 +51,7 @@
     translate: 50% -50%;
     pointer-events: none;
 
-    background-image: url(/images/breadcrum-arrow.png);
+    background-image: url(/images/breadcrum-arrow.webp);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;

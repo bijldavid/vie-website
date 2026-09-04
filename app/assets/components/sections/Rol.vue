@@ -9,7 +9,7 @@
                         <h3>Kennis delen</h3>
                     </div>
                     <div class="image-container">
-                        <img src="/images/kennis-infographic.png" alt="">
+                        <img src="/images/kennis-infographic.webp" alt="">
                     </div>
                     <p>We verzamelen en delen relevante kennis en inzichten over de energietransitie.</p>
                 </li>
@@ -19,7 +19,7 @@
                         <h3>Partijen verbinden</h3>
                     </div>
                     <div class="image-container">
-                        <img src="/images/partijen-infographic.png" alt="">
+                        <img src="/images/partijen-infographic.webp" alt="">
                     </div>
                     <p>We brengen de juiste organisaties, experts en initiatiefnemers met elkaar in contact.</p>
                 </li>
@@ -29,7 +29,7 @@
                         <h3>Projecten aanjagen</h3>
                     </div>
                     <div class="image-container">
-                        <img src="/images/projecten-infographic.png" alt="">
+                        <img src="/images/projecten-infographic.webp" alt="">
                     </div>
                     <p>We helpen initiatieven verder door kansen te verkennen, partners te vinden en trajecten op te
                         zetten.</p>
