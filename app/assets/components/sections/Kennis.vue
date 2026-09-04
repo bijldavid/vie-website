@@ -71,6 +71,12 @@ const visibleItems = computed(() => items.slice(0, MAX_VISIBLE))
     justify-self: center;
 }
 
+@media (width <= 700px) {
+    #kennis .container ul li:nth-child(n + 6) {
+        display: none;
+    }
+}
+
 @media (width > 700px) {
 
     #kennis .container {
