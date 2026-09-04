@@ -94,6 +94,7 @@ footer .container div :is(nav h3, address h3) {
 footer .container div :is(nav ul, address div) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: .5rem;
 }
 
@@ -111,7 +112,6 @@ footer .container div .nav-item {
     width: max-content;
     line-height: 1.75em;
     transition: background-color 0.15s ease, text-decoration 0.15s ease;
-    justify-self: center;
 }
 
 footer .container div .nav-item:hover {
@@ -153,8 +153,8 @@ footer .container>p::before {
         place-items: start;
     }
 
-    footer .container div .nav-item {
-        justify-self: start;
+    footer .container div :is(nav ul, address div) {
+        align-items: flex-start;
     }
 
     footer .container div img {
