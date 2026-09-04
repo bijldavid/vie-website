@@ -12,9 +12,9 @@
 .breadcrumbs {
     --gap: 2.5rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: var(--gap);
-    width: max-content;
+    gap: .25rem var(--gap);
 }
 
 .breadcrumbs a {
