@@ -8,13 +8,13 @@
             <nav :class="{ 'toggle-menu': menuOpen, 'menu-interacted': menuInteracted }" @click="handleNavClick">
                 <ul>
                     <li>
-                        <NuxtLink to="/">Home</NuxtLink>
+                        <NuxtLink to="/" exact-active-class="is-active">Home</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/kennis">Kennis</NuxtLink>
+                        <NuxtLink to="/kennis" active-class="is-active">Kennis</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/over">Over ons</NuxtLink>
+                        <NuxtLink to="/over" active-class="is-active">Over ons</NuxtLink>
                     </li>
                 </ul>
             </nav>
@@ -234,6 +234,10 @@ header .container nav.toggle-menu {
         transition: background-color 0.15s ease, text-decoration 0.15s ease;
         background: color-mix(in srgb, var(--neutral-100) 10%, transparent 90%);
     }
+
+    header .container nav ul li a.is-active {
+        text-decoration: underline color-mix(in srgb, var(--neutral-100) 60%, transparent 40%) solid .125em !important;
+    }
 }
 
 header .container:has(.toggle-menu) button span {
@@ -375,8 +379,12 @@ header .container:has(.toggle-menu) button span:nth-of-type(3) {
         transition: background-color 0.15s ease, text-decoration 0.15s ease;
     }
 
-    header .container nav ul li a:hover {
+    header .container nav ul li a:hover,
+    header .container nav ul li a.is-active {
         text-decoration: underline var(--blue) solid .125em !important;
+    }
+
+    header .container nav ul li a:hover {
         background: color-mix(in srgb, var(--blue-accent) 30%, transparent 70%);
     }
 }
