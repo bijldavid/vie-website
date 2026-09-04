@@ -216,7 +216,7 @@ header .container nav ul li a {
     font-weight: 400;
     line-height: 1.5em;
     color: var(--neutral-100);
-    font-size: var(--p-size);
+    font-size: var(--h3-size);
     text-decoration: underline color-mix(in srgb, var(--neutral-100) 20%, transparent 80%) solid .125em !important;
     text-underline-offset: .5em;
     width: max-content;
