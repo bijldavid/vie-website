@@ -64,6 +64,42 @@ body {
     background: var(--neutral-100);
 }
 
+.page-enter-active,
+.page-leave-active {
+    transition: opacity .25s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: .25s;
+    animation-timing-function: ease;
+}
+
+::view-transition-old(root) {
+    animation-name: page-fade-out;
+}
+
+::view-transition-new(root) {
+    animation-name: page-fade-in;
+}
+
+@keyframes page-fade-out {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes page-fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
 ::selection {
     background: color-mix(in srgb, black 15%, transparent 85%);
 }

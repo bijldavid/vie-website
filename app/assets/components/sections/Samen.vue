@@ -41,20 +41,32 @@ onMounted(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     const scroller = scrollerRef.value
-    if (!scroller || scroller.dataset.animated === 'true') return
-
-    scroller.dataset.animated = 'true'
-
+    if (!scroller) return
     const inner = scroller.querySelector('.scroller-inner')
     if (!inner) return
 
     const originalItems = Array.from(inner.children)
+    if (originalItems.length === 0) return
 
-    originalItems.forEach((item) => {
-        const clone = item.cloneNode(true)
-        clone.setAttribute('aria-hidden', 'true')
-        inner.appendChild(clone)
-    })
+    inner.style.width = 'max-content'
+    inner.style.flexWrap = 'nowrap'
+
+    let setCount = 1
+    const appendSet = () => {
+        originalItems.forEach((item) => {
+            const clone = item.cloneNode(true)
+            clone.setAttribute('aria-hidden', 'true')
+            inner.appendChild(clone)
+        })
+        setCount += 1
+    }
+
+    while (inner.scrollWidth < scroller.clientWidth * 2 || setCount % 2 !== 0) {
+        appendSet()
+    }
+
+    scroller.style.setProperty('--marquee-duration', `${setCount / 2 * 40}s`)
+    scroller.dataset.animated = 'true'
 })
 </script>
 
@@ -86,7 +98,7 @@ onMounted(() => {
     container-type: inline-size;
     --marquee-duration: 40s;
     --marquee-direction: forwards;
-    --marquee-gap: 10cqw;
+    --marquee-gap: min(10cqw, 175px);
 }
 
 #samen .scroller-inner {

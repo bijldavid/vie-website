@@ -17,6 +17,10 @@
                 are built (see project plan: components/kennis/bodies/*).
             -->
             <p class="intro">{{ item.intro }}</p>
+            <p class="placeholder">
+                We werken momenteel aan de volledige tekst van dit artikel. Binnenkort vind je hier meer informatie en
+                praktische inzichten.
+            </p>
         </div>
     </article>
 </template>
@@ -71,6 +75,13 @@ if (!item) {
     font-size: var(--p-size);
     font-weight: 300;
     color: var(--neutral-900);
+}
+
+#kennis-detail .placeholder {
+    font-family: inter, sans-serif;
+    font-size: var(--p-size);
+    font-weight: 300;
+    color: var(--neutral-600);
 }
 
 @media (width > 700px) {

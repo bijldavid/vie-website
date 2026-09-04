@@ -3,7 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   app: {
-    viewTransition: true
+    viewTransition: true,
+    pageTransition: {
+      name: 'page',
+    },
   },
   components: [
     {
