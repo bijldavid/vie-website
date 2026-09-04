@@ -15,13 +15,13 @@
                     tussen verschillende partijen en belangen. Zo vormen we een onafhankelijke schakel tussen kennis,
                     netwerk en uitvoering.
                 </p>
+                <NuxtLink to="/over" class="button">Lees meer →</NuxtLink>
             </div>
             <div class="image-container">
                 <img src="/images/about1.webp" class="img-a" />
                 <img src="/images/about2.webp" class="img-b" />
                 <img src="/images/about3.webp" class="img-c" />
             </div>
-            <NuxtLink to="/over" class="button">Lees meer →</NuxtLink>
         </div>
     </section>
 </template>
@@ -93,7 +93,7 @@
         max-width: 1300px;
         margin-inline: auto;
         grid-template-columns: 1fr 1.25fr;
-        gap: 1rem 5rem;
+        gap: 5rem;
     }
 
     #over-ons .container .image-container {

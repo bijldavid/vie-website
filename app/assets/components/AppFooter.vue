@@ -101,7 +101,6 @@ footer .container div :is(nav ul li *, address div *) {
     color: var(--neutral-100);
     font-size: var(--p-size);
     text-decoration: none;
-    justify-self: center;
 }
 
 footer .container div .nav-item {
@@ -112,6 +111,7 @@ footer .container div .nav-item {
     width: max-content;
     line-height: 1.75em;
     transition: background-color 0.15s ease, text-decoration 0.15s ease;
+    justify-self: center;
 }
 
 footer .container div .nav-item:hover {
