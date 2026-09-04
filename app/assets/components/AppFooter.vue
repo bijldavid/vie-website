@@ -153,7 +153,7 @@ footer .container>p::before {
         place-items: start;
     }
 
-    footer .container div :is(nav ul li *, address div *) {
+    footer .container div .nav-item {
         justify-self: start;
     }
 
