@@ -102,7 +102,7 @@ const filteredItems = computed(() => {
 
 @media (width > 700px) {
     #kennis-overview .container {
-        max-width: 1000px;
+        max-width: 1300px;
         margin-inline: auto;
     }
 
