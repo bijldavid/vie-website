@@ -70,7 +70,7 @@ if (!item) {
     font-family: inter, sans-serif;
     font-size: var(--p-size);
     font-weight: 300;
-    color: var(--neutral-600);
+    color: var(--neutral-900);
 }
 
 @media (width > 700px) {
