@@ -157,7 +157,7 @@ header .container .logo-container::after {
     translate: -50% -47%;
     height: 100%;
     width: 100%;
-    background-image: url(/images/vie-logo-white.png);
+    background-image: url(/images/vie-logo-white.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
