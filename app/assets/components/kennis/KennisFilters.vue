@@ -61,12 +61,18 @@ const props = defineProps({
 const emit = defineEmits(['update:modelValue', 'update:search'])
 
 function toggleFilter(value) {
-    const next = props.modelValue.includes(value)
+    const isActivating = !props.modelValue.includes(value)
+    const next = !isActivating
         ? props.modelValue.filter((v) => v !== value)
         : [...props.modelValue, value]
 
     runWithViewTransition(() => {
         emit('update:modelValue', next)
+
+        if (isActivating) {
+            filterFieldset.value?.scrollTo({ left: 0 })
+            updateScrollIndicators()
+        }
     })
 }
 
