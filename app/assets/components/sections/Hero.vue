@@ -2,16 +2,16 @@
     <section id="hero">
         <div class="container">
             <div class="text-container">
-                <p>Kennis → Verbinding → Samenwerking → Versnelling</p>
+                <p>Kennis <span>→</span> Verbinding <span>→</span> Samenwerking <span>→</span> Versnelling</p>
                 <h1>Vrijheid <span>in</span> <span>energie</span></h1>
             </div>
         </div>
         <div class="image-cards">
             <div class="image-card" data-index="-3">
-                <img src="" alt="">
+                <img src="/images/grassy-field.png" alt="">
             </div>
             <div class="image-card" data-index="-2">
-                <img src="" alt="">
+                <img src="/images/steam.png" alt="">
             </div>
             <div class="image-card" data-index="-1">
                 <img src="/images/hoogspanning.png" alt="">
@@ -39,12 +39,16 @@
 <style>
 #hero {
     position: relative;
-    padding-block: var(--block-padding);
+    padding-top:calc(var(--block-padding) + 5rem);
     padding-bottom: 0;
     z-index: 1;
     display: grid;
     justify-content: center;
     gap: 3rem;
+    background-image:
+        linear-gradient(to bottom, var(--neutral-100), transparent 50%),
+        url('/images/repeating-dot.png');
+    background-size: 15px;
 }
 
 #hero .container {
@@ -86,6 +90,23 @@
 #hero .container .text-container p {
     font-size: var(--p-size);
     max-width: 25ch;
+}
+
+#hero .container .text-container p span {
+    margin-inline: .5rem;
+}
+
+#hero .container .text-container p span:nth-of-type(1) {
+    color: var(--blue);
+}
+
+#hero .container .text-container p span:nth-of-type(2) {
+    color: var(--orange);
+}
+
+#hero .container .text-container p span:nth-of-type(3) {
+    color: var(--teal-accent);
+    /* color: var(--teal); */
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -163,7 +184,7 @@
     object-fit: cover;
 }
 
-@media (width > 450px) {
+@media (width > 470px) {
     #hero .container .text-container p {
         max-width: 100%;
     }

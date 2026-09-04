@@ -7,18 +7,30 @@
                 <nav>
                     <h3>Navigatie</h3>
                     <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#intro">Waarom VIE</a></li>
-                        <li><a href="#rol">Onze rol</a></li>
-                        <li><a href="#kennis">Kennis</a></li>
-                        <li><a href="#samen">Samen sterker</a></li>
-                        <li><a href="#over-ons">Over ons</a></li>
+                        <li>
+                            <NuxtLink to="/#hero" class="nav-item">Home</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/#intro" class="nav-item">Waarom VIE</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/#rol" class="nav-item">Onze rol</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/#kennis" class="nav-item">Kennis</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/#samen" class="nav-item">Samen sterker</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="/over" class="nav-item">Over ons</NuxtLink>
+                        </li>
                     </ul>
                 </nav>
                 <address>
                     <h3>Contact</h3>
                     <div>
-                        <a href="mailto:info@vrijheidinenergie.nl">info@vrijheidinenergie.nl</a>
+                        <a href="mailto:info@vrijheidinenergie.nl" class="nav-item">info@vrijheidinenergie.nl</a>
                         <p>+31 31 (0)20 000 00 00</p>
                         <p>Amsterdam, Nederland</p>
                     </div>
@@ -89,9 +101,25 @@ footer .container div :is(nav ul li *, address div *) {
     color: var(--neutral-100);
     font-size: var(--p-size);
     text-decoration: none;
+    justify-self: center;
 }
 
-footer .container > p {
+footer .container div .nav-item {
+    display: block;
+    color: var(--neutral-100);
+    text-decoration: underline color-mix(in srgb, var(--neutral-100) 20%, transparent 80%) solid .125em !important;
+    text-underline-offset: .5em;
+    width: max-content;
+    line-height: 1.75em;
+    transition: background-color 0.15s ease, text-decoration 0.15s ease;
+}
+
+footer .container div .nav-item:hover {
+    text-decoration: underline color-mix(in srgb, var(--neutral-100) 60%, transparent 40%) solid .125em !important;
+    background: color-mix(in srgb, var(--blue-accent) 30%, transparent 70%);
+}
+
+footer .container>p {
     position: relative;
     text-align: center;
     font-size: var(--sub-title-size);
@@ -99,7 +127,7 @@ footer .container > p {
     margin-top: 6rem;
 }
 
-footer .container > p::before {
+footer .container>p::before {
     content: '';
     position: absolute;
     top: -2rem;
@@ -123,6 +151,10 @@ footer .container > p::before {
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
         place-items: start;
+    }
+
+    footer .container div :is(nav ul li *, address div *) {
+        justify-self: start;
     }
 
     footer .container div img {

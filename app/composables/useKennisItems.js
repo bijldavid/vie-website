@@ -5,7 +5,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Netcongestie: van knelpunt naar kans',
         intro: 'Hoe lokale samenwerking ruimte kan creëren op een steeds voller elektriciteitsnet.',
-        tags: ['netcongestie', 'samenwerking'],
+        tags: ['netcongestie', 'samenwerking', 'beleid-regelgeving'],
         publishedAt: '2025-01-14',
     },
     {
@@ -14,7 +14,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Slimmer sturen op lokaal energiegebruik',
         intro: 'Praktische voorbeelden van vraagsturing die piekbelasting verlaagt.',
-        tags: ['netcongestie', 'lokale-energieoplossingen'],
+        tags: ['netcongestie', 'lokale-energieoplossingen', 'energiebesparing'],
         publishedAt: '2025-02-03',
     },
     {
@@ -23,7 +23,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Energiehubs als versneller voor de regio',
         intro: 'Waarom collectieve oplossingen bedrijven en netbeheerders vooruithelpen.',
-        tags: ['energiehubs', 'samenwerking'],
+        tags: ['energiehubs', 'samenwerking', 'bedrijventerreinen'],
         publishedAt: '2025-02-18',
     },
     {
@@ -32,7 +32,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Data als kompas voor netcapaciteit',
         intro: 'Met inzicht in verbruik en opwek worden betere keuzes mogelijk.',
-        tags: ['data-digitalisering', 'netcongestie'],
+        tags: ['data-digitalisering', 'netcongestie', 'beleid-regelgeving'],
         publishedAt: '2025-03-05',
     },
     {
@@ -41,7 +41,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Van pilot naar schaalbare aanpak',
         intro: 'Wat nodig is om succesvolle initiatieven structureel uit te rollen.',
-        tags: ['innovatie', 'energiehubs'],
+        tags: ['innovatie', 'energiehubs', 'bedrijventerreinen'],
         publishedAt: '2025-03-21',
     },
     {
@@ -50,7 +50,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Samenwerken aan een toekomstbestendig net',
         intro: 'De rol van overheid, ondernemers en netbeheerders in de energietransitie.',
-        tags: ['samenwerking', 'netcongestie'],
+        tags: ['samenwerking', 'netcongestie', 'beleid-regelgeving'],
         publishedAt: '2025-04-02',
     },
     {
@@ -59,7 +59,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Subsidies die de transitie versnellen',
         intro: 'Een overzicht van regelingen die investeringen in energieoplossingen aantrekkelijker maken.',
-        tags: ['subsidies-financiering', 'innovatie'],
+        tags: ['subsidies-financiering', 'innovatie', 'beleid-regelgeving'],
         publishedAt: '2025-04-15',
     },
     {
@@ -68,7 +68,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Financiering vinden voor lokale projecten',
         intro: 'Welke routes ondernemers kunnen bewandelen om initiatieven van de grond te krijgen.',
-        tags: ['subsidies-financiering', 'lokale-energieoplossingen'],
+        tags: ['subsidies-financiering', 'lokale-energieoplossingen', 'bedrijventerreinen'],
         publishedAt: '2025-04-28',
     },
     {
@@ -77,7 +77,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Lokale opwek slim combineren met opslag',
         intro: 'Hoe batterijen pieken opvangen en het net structureel ontlasten.',
-        tags: ['lokale-energieoplossingen', 'netcongestie'],
+        tags: ['lokale-energieoplossingen', 'netcongestie', 'energieopslag'],
         publishedAt: '2025-05-09',
     },
     {
@@ -86,7 +86,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Digitale tweeling van het energienet',
         intro: 'Simulaties helpen netbeheerders knelpunten te voorspellen voordat ze ontstaan.',
-        tags: ['data-digitalisering', 'innovatie'],
+        tags: ['data-digitalisering', 'innovatie', 'energieopslag'],
         publishedAt: '2025-05-22',
     },
     {
@@ -95,7 +95,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Innovatie uit de praktijk: vijf voorbeelden',
         intro: 'Bedrijven die met slimme technologie het verschil maken op het net.',
-        tags: ['innovatie', 'data-digitalisering'],
+        tags: ['innovatie', 'data-digitalisering', 'energiebesparing'],
         publishedAt: '2025-06-04',
     },
     {
@@ -104,7 +104,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Hoe energiehubs bedrijventerreinen veranderen',
         intro: 'Gedeelde infrastructuur maakt groei mogelijk zonder extra netaansluiting.',
-        tags: ['energiehubs', 'lokale-energieoplossingen'],
+        tags: ['energiehubs', 'lokale-energieoplossingen', 'bedrijventerreinen', 'energiedelen'],
         publishedAt: '2025-06-17',
     },
     {
@@ -113,7 +113,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Publiek-private samenwerking in de praktijk',
         intro: 'Wat gemeenten en bedrijven van elkaar kunnen leren bij netuitbreiding.',
-        tags: ['samenwerking', 'subsidies-financiering'],
+        tags: ['samenwerking', 'subsidies-financiering', 'beleid-regelgeving'],
         publishedAt: '2025-06-30',
     },
     {
@@ -122,7 +122,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'Meetdata beter benutten voor netbeheer',
         intro: 'Real-time inzicht zorgt voor snellere en preciezere beslissingen.',
-        tags: ['data-digitalisering', 'netcongestie'],
+        tags: ['data-digitalisering', 'netcongestie', 'energiebesparing'],
         publishedAt: '2025-07-11',
     },
     {
@@ -131,7 +131,7 @@ const kennisItems = [
         banner: '/images/kennis.png',
         heading: 'De toekomst van lokale energiemarkten',
         intro: 'Waarom buurten steeds vaker hun eigen energie verhandelen en delen.',
-        tags: ['lokale-energieoplossingen', 'innovatie'],
+        tags: ['lokale-energieoplossingen', 'innovatie', 'energiedelen'],
         publishedAt: '2025-07-24',
     },
 ]
@@ -149,6 +149,11 @@ const kennisFilters = [
     { value: 'samenwerking', label: 'Samenwerking' },
     { value: 'data-digitalisering', label: 'Data & digitalisering' },
     { value: 'innovatie', label: 'Innovatie' },
+    { value: 'energiebesparing', label: 'Energiebesparing' },
+    { value: 'energieopslag', label: 'Energieopslag' },
+    { value: 'bedrijventerreinen', label: 'Bedrijventerreinen' },
+    { value: 'energiedelen', label: 'Energiedelen' },
+    { value: 'beleid-regelgeving', label: 'Beleid & regelgeving' },
 ]
 
 /**

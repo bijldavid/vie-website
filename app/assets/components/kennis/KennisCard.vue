@@ -1,5 +1,5 @@
 <template>
-    <article class="kennis-card">
+    <NuxtLink :to="`/kennis/${item.slug}`" class="kennis-card">
         <div class="image-container">
             <img :src="item.thumbnail" :alt="item.heading">
         </div>
@@ -7,7 +7,7 @@
             <h3>{{ item.heading }}</h3>
             <p>{{ item.intro }}</p>
         </div>
-    </article>
+    </NuxtLink>
 </template>
 
 <script setup>
@@ -24,27 +24,29 @@ defineProps({
 /* KENNIS CARD.                                        */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-article.kennis-card {
+.kennis-card {
     display: flex;
     flex-direction: column;
     flex: 1;
     height: 100%;
     border-radius: 5px;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
 }
 
-article.kennis-card .image-container {
+.kennis-card .image-container {
     height: 150px;
     background: var(--neutral-500);
 }
 
-article.kennis-card .image-container img {
+.kennis-card .image-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-article.kennis-card .text-container {
+.kennis-card .text-container {
     border: 1px solid var(--neutral-300);
     border-top: none;
     border-radius: 0 0 10px 10px;
@@ -55,19 +57,23 @@ article.kennis-card .text-container {
     padding: 1rem;
 }
 
-article.kennis-card .text-container h3 {
+.kennis-card .text-container h3 {
     font-size: var(--p-size);
     font-weight: 400;
 }
 
-article.kennis-card .text-container p {
+.kennis-card:hover .text-container h3 {
+    text-decoration: underline var(--neutral-900) solid .1em !important;
+}
+
+.kennis-card .text-container p {
     font-size: var(--p-size);
     font-weight: 300;
     color: var(--neutral-600);
 }
 
 @media (width > 700px) {
-    article.kennis-card {
+    .kennis-card {
         border-radius: 10px;
     }
 }

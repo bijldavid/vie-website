@@ -3,49 +3,24 @@
         <div class="container">
             <p class="sub-title">Kennisplatform</p>
             <h2>Kennis voor een energiesysteem in beweging</h2>
-            <KennisFilters
-                :filters="filters"
-                v-model="selectedFilters"
-                v-model:search="searchQuery"
-            />
-            <span class="hr"></span>
             <TransitionGroup name="kennis-card" tag="ul">
                 <li v-for="item in visibleItems" :key="item.slug">
                     <KennisCard :item="item" />
                 </li>
             </TransitionGroup>
+            <NuxtLink to="/kennis" class="button">Alle artikelen →</NuxtLink>
         </div>
     </section>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 
 const MAX_VISIBLE = 9
 
-const { items, filters } = useKennisItems()
+const { items } = useKennisItems()
 
-const selectedFilters = ref([])
-const searchQuery = ref('')
-
-const filteredItems = computed(() => {
-    const query = searchQuery.value.trim().toLowerCase()
-
-    return items.filter((item) => {
-        const matchesFilters =
-            selectedFilters.value.length === 0 ||
-            item.tags.some((tag) => selectedFilters.value.includes(tag))
-
-        const matchesSearch =
-            query === '' ||
-            item.heading.toLowerCase().includes(query) ||
-            item.intro.toLowerCase().includes(query)
-
-        return matchesFilters && matchesSearch
-    })
-})
-
-const visibleItems = computed(() => filteredItems.value.slice(0, MAX_VISIBLE))
+const visibleItems = computed(() => items.slice(0, MAX_VISIBLE))
 </script>
 
 <style>
@@ -59,13 +34,9 @@ const visibleItems = computed(() => filteredItems.value.slice(0, MAX_VISIBLE))
     gap: 1rem;
 }
 
-#kennis .container .kennis-filters {
-    width: 100%;
-}
-
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* ARTICLES.                                           */
+/* ARTICLES                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #kennis .container ul {
@@ -73,6 +44,7 @@ const visibleItems = computed(() => filteredItems.value.slice(0, MAX_VISIBLE))
     grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 2rem .5rem;
     align-items: stretch;
+    margin-block: 1rem;
 }
 
 #kennis .container ul li {
@@ -93,6 +65,10 @@ const visibleItems = computed(() => filteredItems.value.slice(0, MAX_VISIBLE))
 .kennis-card-enter-to {
     opacity: 1;
     transform: translateY(0) scale(1);
+}
+
+#kennis .container a {
+    justify-self: center;
 }
 
 @media (width > 700px) {

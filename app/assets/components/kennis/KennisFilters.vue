@@ -220,6 +220,7 @@ onBeforeUnmount(() => {
     position: relative;
     display: flex;
     min-width: 100%;
+    max-width: max-content;
     overflow-x: auto;
     border: 1px solid var(--neutral-300);
 }

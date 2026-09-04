@@ -17,10 +17,11 @@
                 </p>
             </div>
             <div class="image-container">
-                <img src="/images/field.png" class="img-a" />
-                <img src="/images/solar-field.png" class="img-b" />
-                <img src="/images/flower-field.png" class="img-c" />
+                <img src="/images/about1.jpg" class="img-a" />
+                <img src="/images/about2.jpg" class="img-b" />
+                <img src="/images/about3.jpg" class="img-c" />
             </div>
+            <NuxtLink to="/over" class="button">Lees meer →</NuxtLink>
         </div>
     </section>
 </template>
@@ -92,7 +93,7 @@
         max-width: 1300px;
         margin-inline: auto;
         grid-template-columns: 1fr 1.25fr;
-        gap: 5rem;
+        gap: 1rem 5rem;
     }
 
     #over-ons .container .image-container {
